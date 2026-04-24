@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vila Jovana — moderni smeštaj u Odžacima, Vojvodina. Udobne sobe, opremljena kuhinja, topla dobrodošlica. Rezervišite odmah na 066 586 2110." />
+  <meta name="theme-color" content="#f4f1ea" />
+  <meta property="og:title" content="Vila Jovana — Smeštaj u Odžacima" />
+  <meta property="og:description" content="Moderni smeštaj u srcu Vojvodine. Vojvođanska 24, Odžaci." />
+  <meta property="og:type" content="website" />
+  <title>Vila Jovana — Smeštaj u Odžacima</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cg stroke='%231c1815' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 32 L30 12 L50 32' stroke-width='2.2'/%3E%3Cpath d='M15 32 L15 52 L45 52 L45 32' stroke-width='2.2'/%3E%3Cpath d='M24 52 L24 42 A6 6 0 0 1 36 42 L36 52' stroke-width='1.8'/%3E%3Crect x='18' y='38' width='4' height='5' stroke-width='1.4'/%3E%3Crect x='38' y='38' width='4' height='5' stroke-width='1.4'/%3E%3Cline x1='8' y1='54' x2='52' y2='54' stroke-width='1.6'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ══════════════ LOADER ══════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <svg class="loader__mark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="30" cy="10" r="1.1" fill="currentColor" stroke="none"/>
+          <line x1="30" y1="11.5" x2="30" y2="14" stroke-width="0.8"/>
+          <path d="M12 31 L30 14 L48 31" stroke-width="1.3"/>
+          <line x1="15" y1="33" x2="45" y2="33" stroke-width="0.7"/>
+          <path d="M17 33 L17 50 L43 50 L43 33" stroke-width="1.3"/>
+          <path d="M25 50 L25 41 A5 5 0 0 1 35 41 L35 50" stroke-width="1.1"/>
+          <line x1="30" y1="41" x2="30" y2="50" stroke-width="0.6"/>
+          <rect x="19" y="37" width="3.2" height="4" stroke-width="0.9"/>
+          <line x1="20.6" y1="37" x2="20.6" y2="41" stroke-width="0.5"/>
+          <rect x="37.8" y="37" width="3.2" height="4" stroke-width="0.9"/>
+          <line x1="39.4" y1="37" x2="39.4" y2="41" stroke-width="0.5"/>
+          <line x1="11" y1="52" x2="49" y2="52" stroke-width="1.1"/>
+          <line x1="9" y1="54" x2="51" y2="54" stroke-width="0.7"/>
+        </g>
+      </svg>
+      <div class="loader__name">
+        <span>V</span><span>i</span><span>l</span><span>a</span>
+        <span class="loader__space">&nbsp;</span>
+        <span>J</span><span>o</span><span>v</span><span>a</span><span>n</span><span>a</span>
+      </div>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <div class="loader__meta">Odžaci · Vojvodina</div>
+    </div>
+  </div>
+
+  <!-- ══════════════ NAV ══════════════ -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" aria-label="Vila Jovana, početna">
+      <svg viewBox="0 0 60 60" class="nav__logo" aria-hidden="true">
+        <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="30" cy="10" r="1.2" fill="currentColor" stroke="none"/>
+          <line x1="30" y1="11.5" x2="30" y2="14" stroke-width="0.9"/>
+          <path d="M12 31 L30 14 L48 31" stroke-width="1.5"/>
+          <line x1="15" y1="33" x2="45" y2="33" stroke-width="0.8"/>
+          <path d="M17 33 L17 50 L43 50 L43 33" stroke-width="1.5"/>
+          <path d="M25 50 L25 41 A5 5 0 0 1 35 41 L35 50" stroke-width="1.2"/>
+          <line x1="30" y1="41" x2="30" y2="50" stroke-width="0.7"/>
+          <rect x="19" y="37" width="3.2" height="4" stroke-width="1"/>
+          <line x1="20.6" y1="37" x2="20.6" y2="41" stroke-width="0.6"/>
+          <rect x="37.8" y="37" width="3.2" height="4" stroke-width="1"/>
+          <line x1="39.4" y1="37" x2="39.4" y2="41" stroke-width="0.6"/>
+          <line x1="11" y1="52" x2="49" y2="52" stroke-width="1.2"/>
+          <line x1="9" y1="54" x2="51" y2="54" stroke-width="0.8"/>
+        </g>
+      </svg>
+      <span class="nav__brand-text">Vila Jovana</span>
+    </a>
+
+    <nav class="nav__center" aria-label="Glavna navigacija">
+      <a href="#about">O nama</a>
+      <a href="#rooms">Sobe</a>
+      <a href="#gallery">Galerija</a>
+      <a href="#location">Lokacija</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="tel:+381665862110" class="nav__phone" aria-label="Pozovi 066 586 2110">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        066 586 2110
+      </a>
+      <a href="#book" class="btn btn--primary nav__cta">Rezerviši</a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Otvori meni" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <div class="hero__eyebrow">
+      <span class="dot"></span>
+      <span>Smeštaj · Odžaci · Vojvodina</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line line-1">Mirna oaza</span>
+      <span class="line line-2"><em>u srcu</em> ravnice</span>
+    </h1>
+
+    <p class="hero__subtitle">
+      Vila Jovana spaja savremeni dizajn, toplinu doma i pažljivu uslugu —
+      idealno mesto za kratak odmor, poslovni boravak ili okupljanje sa najbližima.
+    </p>
+
+    <div class="hero__cta">
+      <a href="tel:+381665862110" class="btn btn--primary">
+        <span>Pozovi i rezerviši</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#gallery" class="btn btn--ghost">Pogledaj galeriju</a>
+    </div>
+
+    <!-- Switchable case-style tabs like Voiceflow -->
+    <div class="hero__tabs" role="tablist" aria-label="Prostori u vili">
+      <button class="hero__tab" data-target="tab-room" role="tab" aria-selected="true">
+        <span class="hero__tab-label">Sobe</span>
+      </button>
+      <button class="hero__tab" data-target="tab-kitchen" role="tab" aria-selected="false">
+        <span class="hero__tab-label">Kuhinja</span>
+      </button>
+      <button class="hero__tab" data-target="tab-suite" role="tab" aria-selected="false">
+        <span class="hero__tab-label">Posebne prilike</span>
+      </button>
+      <button class="hero__tab" data-target="tab-detail" role="tab" aria-selected="false">
+        <span class="hero__tab-label">Detalji</span>
+      </button>
+    </div>
+
+    <div class="hero__stage">
+      <div class="hero__image hero__image--active" id="tab-room" style="background-image:url('assets/images/bunks-room.jpg')">
+        <div class="stat-card">
+          <div class="stat-card__num">3<span></span></div>
+          <div class="stat-card__label">Tipova smeštaja</div>
+          <p class="stat-card__text">
+            Udobno uređene sobe sa modernim krevetima, klima uređajem i velikim prozorima —
+            prilagođene za pojedince, parove i grupe.
+          </p>
+          <a href="#rooms" class="stat-card__link">Pogledaj sobe →</a>
+        </div>
+      </div>
+
+      <div class="hero__image" id="tab-kitchen" style="background-image:url('assets/images/kitchen.jpg')">
+        <div class="stat-card">
+          <div class="stat-card__num">100<span>%</span></div>
+          <div class="stat-card__label">Opremljena kuhinja</div>
+          <p class="stat-card__text">
+            Potpuno opremljena zajednička kuhinja — rerna, indukcija,
+            posuđe, začini, kafa — spremni za dugačke večere i rane doručke.
+          </p>
+          <a href="#rooms" class="stat-card__link">Saznaj više →</a>
+        </div>
+      </div>
+
+      <div class="hero__image" id="tab-suite" style="background-image:url('assets/images/romantic.jpg')">
+        <div class="stat-card stat-card--dark">
+          <div class="stat-card__num">Za 2</div>
+          <div class="stat-card__label">Romantični paket</div>
+          <p class="stat-card__text">
+            Iznenadite najdražu osobu — ruže, penušavo i potpuna privatnost.
+            Savršeno za godišnjice, rođendane i bekstva u dvoje.
+          </p>
+          <a href="tel:+381665862110" class="stat-card__link">Rezerviši paket →</a>
+        </div>
+      </div>
+
+      <div class="hero__image" id="tab-detail" style="background-image:url('assets/images/bunks-close.jpg')">
+        <div class="stat-card">
+          <div class="stat-card__num">24/7</div>
+          <div class="stat-card__label">Dostupnost domaćina</div>
+          <p class="stat-card__text">
+            Fleksibilan check-in, brz odgovor na pozive i poruke —
+            domaćin je uvek u blizini za sve što vam zatreba.
+          </p>
+          <a href="tel:+381665862110" class="stat-card__link">Pozovi sada →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TRUST STRIP ══════════════ -->
+  <section class="trust" aria-label="Naše vrednosti">
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Besplatan WiFi</span><span class="sep">✦</span>
+        <span>Parking u dvorištu</span><span class="sep">✦</span>
+        <span>Klima u svakoj sobi</span><span class="sep">✦</span>
+        <span>Opremljena kuhinja</span><span class="sep">✦</span>
+        <span>Mirna lokacija</span><span class="sep">✦</span>
+        <span>Prijateljski domaćin</span><span class="sep">✦</span>
+        <span>Besplatan WiFi</span><span class="sep">✦</span>
+        <span>Parking u dvorištu</span><span class="sep">✦</span>
+        <span>Klima u svakoj sobi</span><span class="sep">✦</span>
+        <span>Opremljena kuhinja</span><span class="sep">✦</span>
+        <span>Mirna lokacija</span><span class="sep">✦</span>
+        <span>Prijateljski domaćin</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__left">
+        <div class="section-eyebrow">O vili</div>
+        <h2 class="section-title">
+          Mesto gde se <em>tišina</em><br>
+          pretvara u odmor.
+        </h2>
+      </div>
+      <div class="about__right">
+        <p class="about__lead">
+          Smeštena u Vojvođanskoj 24, na mirnoj strani Odžaka, Vila Jovana je pažljivo
+          uređen prostor za goste koji traže udobnost bez kompromisa.
+        </p>
+        <p>
+          Industrijski elementi, topli drveni detalji i pažljivo odabran tekstil spajaju
+          se u moderan ambijent. Bilo da putujete sami, u paru ili sa društvom — zajednička
+          kuhinja, svetle sobe i ljubazan domaćin čine vaš boravak lakim i prijatnim.
+        </p>
+        <div class="about__stats">
+          <div class="about__stat">
+            <div class="about__stat-num">14</div>
+            <div class="about__stat-label">Ležajeva ukupno</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">3</div>
+            <div class="about__stat-label">Soba na raspolaganju</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">2 min</div>
+            <div class="about__stat-label">Do centra Odžaka</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ROOMS / FEATURES ══════════════ -->
+  <section class="rooms" id="rooms">
+    <div class="section-eyebrow centered">Šta nudimo</div>
+    <h2 class="section-title centered">
+      Prostori napravljeni <em>s pažnjom</em>.
+    </h2>
+
+    <div class="rooms__grid">
+      <article class="room-card">
+        <div class="room-card__img" style="background-image:url('assets/images/bunks-room.jpg')"></div>
+        <div class="room-card__body">
+          <div class="room-card__tag">Grupni smeštaj</div>
+          <h3>Sobe sa krevetima na sprat</h3>
+          <p>Numerisani ležajevi, individualno osvetljenje, utičnice pored svakog kreveta i besprekorno čist posteljina.</p>
+          <ul class="room-card__list">
+            <li>Klima uređaj</li>
+            <li>Posebni ormarići</li>
+            <li>Prirodna svetlost</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="room-card">
+        <div class="room-card__img" style="background-image:url('assets/images/kitchen.jpg')"></div>
+        <div class="room-card__body">
+          <div class="room-card__tag">Zajednički prostor</div>
+          <h3>Potpuno opremljena kuhinja</h3>
+          <p>Rerna, indukcijska ploča, espreso aparat, posuđe i začini — sve što vam treba za spremanje sopstvenih obroka.</p>
+          <ul class="room-card__list">
+            <li>Indukcija · rerna</li>
+            <li>Espreso aparat</li>
+            <li>Posuđe i pribor</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="room-card room-card--wide">
+        <div class="room-card__img" style="background-image:url('assets/images/romantic.jpg')"></div>
+        <div class="room-card__body">
+          <div class="room-card__tag">Posebne prilike</div>
+          <h3>Romantični paket za dvoje</h3>
+          <p>Iznenađenje na jastuku — buket ruža, penušavo vino i dve čaše. Savršeno za godišnjice, rođendane ili prošnje.</p>
+          <ul class="room-card__list">
+            <li>Ruže u srcu</li>
+            <li>Penušavo vino</li>
+            <li>Privatnost i mir</li>
+          </ul>
+          <a href="tel:+381665862110" class="room-card__cta">Pozovi za paket →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__head">
+      <div>
+        <div class="section-eyebrow">Galerija</div>
+        <h2 class="section-title">
+          Pogledajte <em>svaki ugao</em>.
+        </h2>
+      </div>
+      <p class="gallery__note">Fotografije i kratki video pregledi prostora — onako kako zaista izgleda.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <figure class="g g-1" style="background-image:url('assets/images/kitchen.jpg')" data-src="assets/images/kitchen.jpg" data-caption="Kuhinja — potpuno opremljena"></figure>
+      <figure class="g g-2" style="background-image:url('assets/images/bunks-room.jpg')" data-src="assets/images/bunks-room.jpg" data-caption="Soba sa krevetima na sprat"></figure>
+      <figure class="g g-3" style="background-image:url('assets/images/bunks-close.jpg')" data-src="assets/images/bunks-close.jpg" data-caption="Detalj — spremljeni ležaj"></figure>
+      <figure class="g g-4" style="background-image:url('assets/images/romantic.jpg')" data-src="assets/images/romantic.jpg" data-caption="Romantični paket"></figure>
+    </div>
+
+    <div class="gallery__videos">
+      <div class="video-card">
+        <video controls preload="metadata" poster="assets/images/video-1-poster.jpg">
+          <source src="assets/videos/tour-1.mp4" type="video/mp4" />
+        </video>
+        <div class="video-card__label">Obilazak sobe</div>
+      </div>
+      <div class="video-card">
+        <video controls preload="metadata" poster="assets/images/video-2-poster.jpg">
+          <source src="assets/videos/tour-2.mp4" type="video/mp4" />
+        </video>
+        <div class="video-card__label">Atmosfera</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ LOCATION ══════════════ -->
+  <section class="location" id="location">
+    <div class="location__content">
+      <div class="section-eyebrow">Lokacija</div>
+      <h2 class="section-title">
+        Vojvođanska 24, <em>Odžaci</em>.
+      </h2>
+      <p class="location__text">
+        Nalazimo se u mirnom delu grada, sa lakim pristupom glavnom putu ka Somboru i
+        Novom Sadu. Parking je u dvorištu, a centar Odžaka na par minuta peške.
+      </p>
+      <ul class="location__list">
+        <li><strong>Adresa:</strong> Vojvođanska 24, 25250 Odžaci</li>
+        <li><strong>Telefon:</strong> <a href="tel:+381665862110">066 586 2110</a></li>
+        <li><strong>Region:</strong> Zapadnobačka Vojvodina, Srbija</li>
+      </ul>
+      <a href="https://www.google.com/maps/search/?api=1&query=Vojvo%C4%91anska+24%2C+Od%C5%BEaci" target="_blank" rel="noopener" class="btn btn--dark">
+        Otvori u Google Maps
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+    <div class="location__map">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=19.24%2C45.495%2C19.28%2C45.520&layer=mapnik&marker=45.5075%2C19.2644"
+        loading="lazy"
+        title="Mapa — Vila Jovana, Odžaci"></iframe>
+      <div class="location__pin">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Vila Jovana · Odžaci</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT / BOOK ══════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner" id="book">
+      <div class="section-eyebrow light">Rezervacije</div>
+      <h2 class="contact__title">
+        Spremni za <em>boravak</em>?
+      </h2>
+      <p class="contact__sub">
+        Najbrže je da nas pozovete direktno — odgovaramo odmah, bez čekanja i bez formulara.
+      </p>
+
+      <div class="contact__grid">
+        <a href="tel:+381665862110" class="contact__card contact__card--primary">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact__card-label">Pozovite nas</div>
+          <div class="contact__card-value">066 586 2110</div>
+          <div class="contact__card-hint">Direktan poziv · svaki dan</div>
+        </a>
+
+        <a href="viber://chat?number=%2B381665862110" class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="contact__card-label">Viber / SMS</div>
+          <div class="contact__card-value">066 586 2110</div>
+          <div class="contact__card-hint">Pošaljite poruku</div>
+        </a>
+
+        <div class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact__card-label">Adresa</div>
+          <div class="contact__card-value">Vojvođanska 24</div>
+          <div class="contact__card-hint">25250 Odžaci, Srbija</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg viewBox="0 0 60 60" class="footer__logo" aria-hidden="true">
+          <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="30" cy="10" r="1.2" fill="currentColor" stroke="none"/>
+            <line x1="30" y1="11.5" x2="30" y2="14" stroke-width="0.9"/>
+            <path d="M12 31 L30 14 L48 31" stroke-width="1.5"/>
+            <line x1="15" y1="33" x2="45" y2="33" stroke-width="0.8"/>
+            <path d="M17 33 L17 50 L43 50 L43 33" stroke-width="1.5"/>
+            <path d="M25 50 L25 41 A5 5 0 0 1 35 41 L35 50" stroke-width="1.2"/>
+            <line x1="30" y1="41" x2="30" y2="50" stroke-width="0.7"/>
+            <rect x="19" y="37" width="3.2" height="4" stroke-width="1"/>
+            <line x1="20.6" y1="37" x2="20.6" y2="41" stroke-width="0.6"/>
+            <rect x="37.8" y="37" width="3.2" height="4" stroke-width="1"/>
+            <line x1="39.4" y1="37" x2="39.4" y2="41" stroke-width="0.6"/>
+            <line x1="11" y1="52" x2="49" y2="52" stroke-width="1.2"/>
+            <line x1="9" y1="54" x2="51" y2="54" stroke-width="0.8"/>
+          </g>
+        </svg>
+        <div>
+          <div class="footer__name">Vila Jovana</div>
+          <div class="footer__tag">Smeštaj u srcu Vojvodine</div>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Podnožje navigacija">
+        <a href="#about">O nama</a>
+        <a href="#rooms">Sobe</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#location">Lokacija</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div>© <span id="year"></span> Vila Jovana · Sva prava zadržana</div>
+      <div>Vojvođanska 24, Odžaci · <a href="tel:+381665862110">066 586 2110</a></div>
+    </div>
+  </footer>
+
+  <!-- ══════════════ FLOATING CALL BUTTON (bottom left) ══════════════ -->
+  <a href="tel:+381665862110" class="call-fab" aria-label="Pozovi Vilu Jovanu na 066 586 2110">
+    <span class="call-fab__ping"></span>
+    <span class="call-fab__ring"></span>
+    <span class="call-fab__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </span>
+    <span class="call-fab__label">Pozovi 066 586 2110</span>
+  </a>
+
+  <!-- ══════════════ LIGHTBOX ══════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Zatvori">×</button>
+    <img alt="" id="lightboxImg" />
+    <div class="lightbox__caption" id="lightboxCap"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
